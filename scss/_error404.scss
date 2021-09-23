@@ -1,0 +1,36 @@
+#error {
+    height: 90vh;
+    background: -webkit-linear-gradient(right, $casiNegro, $primary 90%);
+    section {
+        h2{
+            text-align: center;
+            color: $casiNegro;
+        }
+        div{
+            position: relative;
+            h1 {
+                font-size: 9rem;
+                line-height: 1.5;
+                color: rgba(255, 255, 255, 0.3);
+                text-align: center; }
+            h2{
+                text-align: center;
+                color: $casiNegro;
+            }
+        }
+        h3 {
+            margin-top: 2rem;
+            width: 100%;
+            text-align: center; 
+            a {
+            color: $blanco;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            &:hover {
+            color: $primary;
+            transition: 300ms linear; 
+                    }
+                }
+            }
+        }
+    }

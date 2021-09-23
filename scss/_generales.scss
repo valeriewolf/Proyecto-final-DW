@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import "../Bootstrap/scss/bootstrap.scss";
+
+/*Mis estilos*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 1.2rem;
+    min-height: 100%;
+    color: $blanco;
+    background-color: $casiNegro;
+}
+
+.navbar{
+    background-color: $primary;
+}
+.seccion-uno {
+    width: 100%;
+    box-shadow: -1px 1px 7px 0px $primary;
+    border: 4px;
+    text-align: center;
+    color: $blanco;
+}
+
+.img-publicidad{
+    margin-top: $margen;
+    margin-bottom: $margen;
+    border-radius: 4px;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.espacio {
+    letter-spacing: 0.3rem;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.img{
+    float: left;
+    margin-right: $margen;
+    border-radius: 4px;
+}
+
+.img-2{
+    float: left;
+    margin-right: $margen;
+    border-radius: 4px;
+}
+
+.texto{
+    color: $primary;
+    text-align: end;
+    letter-spacing: 0.4rem;
+    font-weight: bold ;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input, textarea, select{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+
+input,textarea{
+    color: $blanco;
+    padding: 0.3rem;
+    background-color: $casiNegro;
+    &:focus{
+        outline: 0;
+        border-color: $primary;
+        background-color: rgb(22, 20, 20);
+    }
+}
+
+/* QUITAR MARCA DE AGUA WEBHOST */
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display:none;
+}
+
+/*MIXINS*/
+
+h1{
+    @include propiedadesTextoYcaja ($margen,$margen,center);      
+}
+
+h2{
+    @include propiedadesTextoYcaja ($margen,$margen,center);   
+}
+
+h3{
+    @include propiedadesTextoYcaja ($margen,$margen,center);
+}

@@ -1,0 +1,65 @@
+#banner {
+    width:100%;
+    height:80vh;
+    background: url(../Assets/Imagenes-varias/banner.jpg) center center;
+    background-size: 100% 80vh;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    }
+
+.main-index{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#tituloPrincipal{
+    width: 80%;
+    padding: 5px;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    font-family: $fuente2;
+    box-shadow: -1px 1px 7px 0px $primary;
+    border: 4px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+
+#cartel-index{
+	width: 90%;
+	margin: auto;
+	border-radius: 6px;
+    box-shadow: -1px 1px 7px 0px $primary;
+	overflow: hidden;
+	background: $casiNegro;
+	transition: all 400ms ease-out;
+	cursor: default;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    a{
+        width: 60%;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 4px;
+        transition: all 400ms ease;
+        margin-bottom: 5px;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+    }
+    a:hover{
+        background: $primary;
+        color: $blanco;
+    }
+}
+
+#cartel-index:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
